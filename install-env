@@ -113,7 +113,7 @@ fi
 echo "--------------------------------------------"
 echo "[ACTION] Copy the TMUX Configuration file into the $HOME directory"
 # Don't use $HOME directory for the dot-files. The modern way is to keep everything in $XDG_CONFIG_HOME, which is $HOME/.config/. However, we will use the old way for now.
-# cp .tmux.conf "$HOME/.tmux.conf"
+cp .tmux.conf "$HOME/.tmux.conf"
 
 echo "--------------------------------------------"
 
