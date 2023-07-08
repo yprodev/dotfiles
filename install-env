@@ -99,7 +99,11 @@ echo "--------------------------------------------"
 
 # [TODO] Specify theme / profile to apply with the command
 
-echo ">>> Player TMUX joined the game!"
+echo "--------------------------------------------"
+echo "[ACTION] Install NeoVim (nvim)"
+# sudo apt install neovim # - UNCOMMENT
+echo "--------------------------------------------"
+
 if [ ! -d ~/.tmux/plugins/tpm ];
 then
 	echo "[ACTION] Install TMUX Plugin Manager (TPM)"
