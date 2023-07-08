@@ -12,6 +12,12 @@ After running the script all the necessary dependencies should be installed.
 
 Please, review the comments in the main script to follow the idea.
 
+## Tmux
+
+Update the `.tmux.conf` file and run command `tmux source ~/.tmux.conf` while `tmux` is running.
+
+Installation of the plugins by the TPM could be done by pressing Prefix + I.
+
 #### References 
 
 [Tmux has forever changed the way I write code.](https://www.youtube.com/watch?v=DzNmUNvnB04 "Tmux has forever changed the way I write code.")
