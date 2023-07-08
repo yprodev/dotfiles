@@ -11,3 +11,8 @@ chmod +x ./install-env
 After running the script all the necessary dependencies should be installed.
 
 Please, review the comments in the main script to follow the idea.
+
+#### References 
+
+[Tmux has forever changed the way I write code.](https://www.youtube.com/watch?v=DzNmUNvnB04 "Tmux has forever changed the way I write code.")
+
