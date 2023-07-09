@@ -1,5 +1,7 @@
 #!/bin/bash
 
+
+echo "[ACTION] Install latest NeoVim (nvim v.0.9.1)"
 command -v nvim >/dev/null
 
 if [[ $? -ne 0 ]]; then
@@ -10,11 +12,6 @@ else
     if (( $(echo "$nvim_version < 0.9 " |bc -l) )); then
             echo "Wrong version of Nvim is installed"
             sudo apt remove neovim -y
-            # Remove previous nvim local cache
-            rm -rf ~/.config/nvim
-            rm -rf ~/.local/share/nvim
-            rm -rf ~/.local/state/nvim
-            rm -rf ~/.cache/nvim
             curl -LO https://github.com/neovim/neovim/releases/download/v0.9.1/nvim.appimage
             chmod u+x nvim.appimage
             sudo mv nvim.appimage /usr/bin/nvim

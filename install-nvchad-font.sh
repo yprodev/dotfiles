@@ -1,4 +1,7 @@
+#!/usr/bin/env bash
+
 # https://askubuntu.com/questions/3697/how-do-i-install-fonts
+echo "[ACTION] Install Nerd Font"
 echo "Create .fonts directory in HOME"
 mkdir $HOME/.fonts
 
