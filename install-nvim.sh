@@ -20,7 +20,11 @@ else
             sudo mv nvim.appimage /usr/bin/nvim
             # Check NeoVim version installed
             nvim --version
+
             # TODO: how to add alias with if
+
+            # echo 'alias vim=nvim' >> ~/.zshrc
+            # source ~/.zshrc
             # Check vim updated Alias
             # vim --version
     else

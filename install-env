@@ -104,20 +104,13 @@ echo "--------------------------------------------"
 echo "[MANUAL ACTION] Install latest NeoVim (nvim)"
 # sudo apt install neovim # - UNCOMMENT
 
-./nvim-install.sh
+# ./install-nvim.sh # UNCOMMENT
+# ./install-nvchad-font.sh #UNCOMMENT
+
+
 
 echo "[MANUAL ACTION] Install Nerd Fonts"
 # https://askubuntu.com/questions/3697/how-do-i-install-fonts
-
-echo "[MANUAL ACTION] IMPRTANT! Make an alias at the start up"
-# echo 'alias vim=nvim' >> ~/.zshrc
-# source ~/.zshrc
-
-# 1.1 Remove previous nvim local cache
-# rm -rf ~/.config/nvim
-# rm -rf ~/.local/share/nvim
-# rm -rf ~/.local/state/nvim
-# rm -rf ~/.cache/nvim
 
 # 1.2 Install NvChad
 # git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
