@@ -119,13 +119,13 @@ echo "[MANUAL ACTION] IMPRTANT! Make an alias at the start up"
 # source ~/.zshrc
 
 # 1.1 Remove previous nvim local cache
-rm -rf ~/.config/nvim
-rm -rf ~/.local/share/nvim
-rm -rf ~/.local/state/nvim
-rm -rf ~/.cache/nvim
+# rm -rf ~/.config/nvim
+# rm -rf ~/.local/share/nvim
+# rm -rf ~/.local/state/nvim
+# rm -rf ~/.cache/nvim
 
 # 1.2 Install NvChad
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+# git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 
 echo "[MANUAL ACTION] IMPRTANT! On the first open of NeoVim"
 echo "you would be suggested to install example custom config."
@@ -198,6 +198,9 @@ echo "--------------------------------------------"
 
 echo "LANGUAGE SERVERS (LSP - Langauge Server Protocol)"
 echo "To add customizations:"
+
+# IMPORTANT
+# all the files you created for lua should be here
 
 echo "--------------------------------------------"
 
