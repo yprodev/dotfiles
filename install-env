@@ -99,9 +99,106 @@ echo "--------------------------------------------"
 
 # [TODO] Specify theme / profile to apply with the command
 
+## IMPORTANT to make a separate script
 echo "--------------------------------------------"
-echo "[ACTION] Install NeoVim (nvim)"
+echo "[MANUAL ACTION] Install latest NeoVim (nvim)"
 # sudo apt install neovim # - UNCOMMENT
+
+# FROM IMAGE
+# curl -LO https://github.com/neovim/neovim/releases/download/v0.9.1/nvim.appimage
+# chmod u+x nvim.appimage
+# sudo mv nvim.appimage /usr/bin/nvim
+# check the version: nvim --version
+# check alias vim --version
+
+echo "[MANUAL ACTION] Install Nerd Fonts"
+# https://askubuntu.com/questions/3697/how-do-i-install-fonts
+
+echo "[MANUAL ACTION] IMPRTANT! Make an alias at the start up"
+# echo 'alias vim=nvim' >> ~/.zshrc
+# source ~/.zshrc
+
+# 1.1 Remove previous nvim local cache
+rm -rf ~/.config/nvim
+rm -rf ~/.local/share/nvim
+rm -rf ~/.local/state/nvim
+rm -rf ~/.cache/nvim
+
+# 1.2 Install NvChad
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+
+echo "[MANUAL ACTION] IMPRTANT! On the first open of NeoVim"
+echo "you would be suggested to install example custom config."
+echo "Type in 'n' as a 'no'."
+
+echo "--------------------------------------------"
+
+echo "THEMING..."
+echo "Press SPC t h (in this order)"
+echo "use cappuccin"
+
+echo "--------------------------------------------"
+
+echo "SYNTAX HIGHLIGHTING"
+echo "use colon command: :TSInstall javascript"
+echo "Uses this pluging for the nvim: https://tree-sitter.github.io/tree-sitter/"
+
+echo "--------------------------------------------"
+
+echo "FILE TREE"
+echo "Nvim Tree: press Ctrl + n"
+echo "While going throug the files press m to mark the file in the tree structure"
+echo "Create a new file: press a while going through the tree"
+echo "Copy files: press c"
+echo "Paste the files: press p"
+echo "Rename the files: press r"
+
+echo "--------------------------------------------"
+
+echo "FILE NAVIGATION"
+echo "To find the file: pres SPC f f"
+echo "Search only accross the files which are already opened: press SPC f b"
+
+
+echo "--------------------------------------------"
+
+echo "NvChad CHEATSHEET"
+echo "Cheatcshet: press SPC c h"
+
+
+echo "--------------------------------------------"
+
+echo "WINDOW NAVIGATION"
+echo "Ctrl + j (+l, +k, +h)"
+echo "Open new panes in vim using commands: :vsp, :sp"
+echo "Use line numbers: SPC n OR SPC r n"
+
+
+echo "--------------------------------------------"
+
+echo "tabbufline"
+echo "Tab OR Shift + Tab gives ability to move around tabs"
+echo "Close active buffer: SPC x"
+
+
+echo "--------------------------------------------"
+
+echo "terminal"
+echo "Access the nvim shell: SPC v OR SPC h"
+
+echo "--------------------------------------------"
+
+echo "CUSTOMIZATIONS"
+echo "To add customizations:"
+echo "~/.config/nvim/lua/custom use two files"
+echo "chadrc.lua - used to override the default config of NvChad"
+echo "init.lua - used to override NeoVim options and commands"
+
+echo "--------------------------------------------"
+
+echo "LANGUAGE SERVERS (LSP - Langauge Server Protocol)"
+echo "To add customizations:"
+
 echo "--------------------------------------------"
 
 if [ ! -d ~/.tmux/plugins/tpm ];

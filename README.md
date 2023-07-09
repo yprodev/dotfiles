@@ -12,6 +12,14 @@ After running the script all the necessary dependencies should be installed.
 
 Please, review the comments in the main script to follow the idea.
 
+## NeoVIM
+
+Install [nerdfonts](https://www.nerdfonts.com/).
+Use for the start `JetBrainsMono Nerd Font`. How to install fonts on Ubuntu [instructions](https://askubuntu.com/questions/3697/how-do-i-install-fonts). Also you may use this [instruction](https://askubuntu.com/questions/191778/how-to-install-many-font-files-quickly-and-easily)
+
+Install [NvChand](https://github.com/NvChad/NvChad) with this command `git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1`
+
+
 ## Tmux
 
 Update the `.tmux.conf` file and run command `tmux source ~/.tmux.conf` while `tmux` is running.
