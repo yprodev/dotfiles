@@ -18,8 +18,6 @@ sudo apt install \
 	curl \
 	tmux \
 	wget \
-	git \
-	dconf-cli \
-	uuid-runtime
+	git
 
 echo "--------------------------------------------"
