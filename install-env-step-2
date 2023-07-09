@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+echo "[ACTION] Copy custom NvChad files into the /custom directory"
+cp -r ./nvchad-custom $HOME/.config/nvim/lua/custom
+
+./install-tmux.sh

@@ -53,20 +53,3 @@ echo "--------------------------------------------"
 # ./install-nvchad.sh # UNCOMMENT
 
 echo "[MANUAL ACTION] Intermediate Stop"
-
-# IMPORTANT
-# all the files you created for lua should be here
-
-echo "--------------------------------------------"
-
-./install-tmux.sh
-
-echo "[ACTION] Copy the VIM configuration and install plugins"
-# [TODO] Remove outdated packages
-echo "--------------------------------------------"
-
-echo "[ACTION] Remove outdated packages"
-# [TODO] Remove outdated packages
-# Autoremove outdated dependencies
-# sudo apt autoremove
-echo "--------------------------------------------"

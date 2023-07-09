@@ -12,11 +12,11 @@ Before you try to install any dependencies, check the versions
 
 
 
-Environment installation could be automated by using `install-env` script. After cloning the repository onto your machine, run command:
+Environment installation could be automated by using `install-env-step-1` script. After cloning the repository onto your machine, run command:
 
 ```bash
 cd <directory-of-the-cloned-repo>
-chmod +x ./install-env
+chmod +x ./install-env-step-1
 ./install-env
 ```
 
