@@ -54,3 +54,4 @@ mkdir -p ~/.config/tmux/
 cp .tmux.conf "$HOME/.config/tmux/tmux.conf" # UNCOMMENT ME 
 
 echo "--------------------------------------------"
+echo "[INSTALLATION IS FINISHED] Run tmux and press Prefix Key + I (uppercase i) to install tmux plugin"
