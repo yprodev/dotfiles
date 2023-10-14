@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-./install-deps.sh # UNCOMMENT
+# ./install-deps.sh # UNCOMMENT
 
 echo "--------------------------------------------"
 
@@ -12,8 +12,8 @@ echo "[ACTION] Create Gnome Terminal profile with the name 'Default'"
 # the color schemas. Please, visit this link: https://github.com/Mayccoll/Gogh/issues/203
 echo "--------------------------------------------"
 
-./install-zsh.sh # UNCOMMENT
-./install-oh-my-zsh.sh # UNCOMMENT
+# ./install-zsh.sh # UNCOMMENT
+# ./install-oh-my-zsh.sh # UNCOMMENT
 
 echo "[ACTION] Install Color scheme for your terminal (Gogh)"
 echo "--------------------------------------------"
@@ -28,16 +28,17 @@ echo "--------------------------------------------"
 # mkdir -p "$HOME/ubuntu-env" # - UNCOMMENT
 # cd "$HOME/ubuntu-env" # - UNCOMMENT
 # git clone https://github.com/Mayccoll/Gogh.git gogh # - UNCOMMENT
-# cd gogh/themes # - UNCOMMENT
+# cd "$HOME/ubuntu-env/gogh/themes" # - UNCOMMENT
 
 # necessary on ubuntu
-# export TERMINAL=gnome-terminal # - UNCOMMENT
+export TERMINAL=gnome-terminal # - UNCOMMENT
 
 # install themes
-# ./atom.sh # - UNCOMMENT
-# ./dracula.sh # - UNCOMMENT
-# ./material.sh # - UNCOMMENT
-# ./molokai.sh # - UNCOMMENT
+cd "$HOME/ubuntu-env/gogh/installs" # - UNCOMMENT
+./atom.sh # - UNCOMMENT
+./dracula.sh # - UNCOMMENT
+./material.sh # - UNCOMMENT
+./molokai.sh # - UNCOMMENT
 
 # Put this into a README.md
 # Gogh can have an issue with Gnome Profile, while installing
@@ -48,8 +49,8 @@ echo "--------------------------------------------"
 ## IMPORTANT to make a separate script
 echo "--------------------------------------------"
 
-# ./install-nvim.sh # UNCOMMENT
-# ./install-nvchad-font.sh # UNCOMMENT
-# ./install-nvchad.sh # UNCOMMENT
+./install-nvim.sh # UNCOMMENT
+./install-nvchad-font.sh # UNCOMMENT
+./install-nvchad.sh # UNCOMMENT
 
 echo "[MANUAL ACTION] Intermediate Stop"
